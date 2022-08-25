@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <launch>
   <arg name="paused" default="false"/>
-  <arg name="use_sim_time" default="true"/>
-  <arg name="gui" default="true"/>
+  <arg name="use_sim_time" default="true"/>  <!-- 仿真中设true，样机中传感器硬件提供时间 -->
+  <arg name="gui" default="false"/>    <!-- 是否打开gazebo界面，设false可节省关闭gazebo的等待时间 -->
   <arg name="headless" default="false"/>
-  <arg name="debug" default="false"/>
-  <arg name="verbose" default="false"/>
-  <arg name="world_name" default="$(find velodyne_description)/world/example.world"/>
+  <arg name="debug" default="false"/>  <!-- 命令行界面中打印中间参数状态 -->
+  <arg name="verbose" default="false "/>  <!-- 命令行界面中打印系统状态信息 -->
+  <arg name="world_name" default="$(find velodyne_description)/world/example.world"/>  <!-- 加载世界文件 -->
 
   <!-- Start gazebo and load the world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch" >
@@ -22,10 +22,14 @@
   <!-- Spawn the example robot -->
   <arg name="gpu" default="false"/>
   <arg name="organize_cloud" default="false"/>
+  <!-- 加载机器人urdf模型 -->
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find velodyne_description)/urdf/Scout_base.urdf.xacro' organize_cloud:=$(arg organize_cloud) gpu:=$(arg gpu)" />
   <node pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -param /robot_description -model example"/>
-  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
-    <param name="publish_frequency" type="double" value="30.0" />
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">  <!-- 发布机器人状态 -->
+
+  </node>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >  <!-- 发布机器人关节 -->
+
   </node>
 
   <!-- RViz -->

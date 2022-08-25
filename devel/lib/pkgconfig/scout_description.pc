@@ -1,4 +1,4 @@
-prefix=/home/seu/Sim_Bunker_ws/devel
+prefix=/home/zs/WYQ_ws/Bunker_base_ws/devel
 
 Name: scout_description
 Description: Description of scout_description

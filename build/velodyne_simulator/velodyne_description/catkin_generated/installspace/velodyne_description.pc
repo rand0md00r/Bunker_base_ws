@@ -1,4 +1,4 @@
-prefix=/home/seu/Sim_Bunker_ws/install
+prefix=/home/zs/WYQ_ws/Bunker_base_ws/install
 
 Name: velodyne_description
 Description: Description of velodyne_description

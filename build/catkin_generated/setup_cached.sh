@@ -7,7 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/seu/Sim_Bunker_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/seu/Sim_Bunker_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/seu/Sim_Bunker_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH='/home/seu/Sim_Bunker_ws/src:/home/seu/lio-sam/src:/opt/ros/melodic/share'
+export CMAKE_PREFIX_PATH="/home/zs/WYQ_ws/Bunker_base_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/home/zs/zs_test/devel/lib:/home/zs/scout/devel/lib:/home/zs/lio-sam/devel/lib:/home/zs/sensor_driver/devel/lib:/home/zs/hg_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/cuda/lib64'
+export PATH='/opt/ros/melodic/bin:/usr/local/cuda/bin:/home/zs/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+export PWD='/home/zs/WYQ_ws/Bunker_base_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/zs/WYQ_ws/Bunker_base_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/zs/WYQ_ws/Bunker_base_ws/src:$ROS_PACKAGE_PATH"

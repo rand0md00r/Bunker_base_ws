@@ -67,14 +67,14 @@ set(velodyne_gazebo_plugins_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(velodyne_gazebo_plugins_SOURCE_PREFIX /home/seu/Sim_Bunker_ws/src/velodyne_simulator/velodyne_gazebo_plugins)
-  set(velodyne_gazebo_plugins_DEVEL_PREFIX /home/seu/Sim_Bunker_ws/devel)
+  set(velodyne_gazebo_plugins_SOURCE_PREFIX /home/zs/WYQ_ws/Bunker_base_ws/src/velodyne_simulator/velodyne_gazebo_plugins)
+  set(velodyne_gazebo_plugins_DEVEL_PREFIX /home/zs/WYQ_ws/Bunker_base_ws/devel)
   set(velodyne_gazebo_plugins_INSTALL_PREFIX "")
   set(velodyne_gazebo_plugins_PREFIX ${velodyne_gazebo_plugins_DEVEL_PREFIX})
 else()
   set(velodyne_gazebo_plugins_SOURCE_PREFIX "")
   set(velodyne_gazebo_plugins_DEVEL_PREFIX "")
-  set(velodyne_gazebo_plugins_INSTALL_PREFIX /home/seu/Sim_Bunker_ws/install)
+  set(velodyne_gazebo_plugins_INSTALL_PREFIX /home/zs/WYQ_ws/Bunker_base_ws/install)
   set(velodyne_gazebo_plugins_PREFIX ${velodyne_gazebo_plugins_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(velodyne_gazebo_plugins_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/seu/Sim_Bunker_ws/src/velodyne_simulator/velodyne_gazebo_plugins/include;/usr/include;/usr/include/gazebo-9;/usr/include/bullet;/usr/include/simbody;/usr/include/sdformat-6.0;/usr/include/ignition/math4;/usr/include/OGRE;/usr/include/OGRE/Terrain;/usr/include/OGRE/Paging;/usr/include/ignition/transport4;/usr/include/ignition/msgs1;/usr/include/ignition/common1;/usr/include/ignition/fuel_tools1 " STREQUAL " ")
+if(NOT "/home/zs/WYQ_ws/Bunker_base_ws/src/velodyne_simulator/velodyne_gazebo_plugins/include;/usr/include;/usr/include/gazebo-9;/usr/include/bullet;/usr/include/simbody;/usr/include/sdformat-6.0;/usr/include/ignition/math4;/usr/include/OGRE;/usr/include/OGRE/Terrain;/usr/include/OGRE/Paging;/usr/include/ignition/transport4;/usr/include/ignition/msgs1;/usr/include/ignition/common1;/usr/include/ignition/fuel_tools1 " STREQUAL " ")
   set(velodyne_gazebo_plugins_INCLUDE_DIRS "")
-  set(_include_dirs "/home/seu/Sim_Bunker_ws/src/velodyne_simulator/velodyne_gazebo_plugins/include;/usr/include;/usr/include/gazebo-9;/usr/include/bullet;/usr/include/simbody;/usr/include/sdformat-6.0;/usr/include/ignition/math4;/usr/include/OGRE;/usr/include/OGRE/Terrain;/usr/include/OGRE/Paging;/usr/include/ignition/transport4;/usr/include/ignition/msgs1;/usr/include/ignition/common1;/usr/include/ignition/fuel_tools1")
+  set(_include_dirs "/home/zs/WYQ_ws/Bunker_base_ws/src/velodyne_simulator/velodyne_gazebo_plugins/include;/usr/include;/usr/include/gazebo-9;/usr/include/bullet;/usr/include/simbody;/usr/include/sdformat-6.0;/usr/include/ignition/math4;/usr/include/OGRE;/usr/include/OGRE/Terrain;/usr/include/OGRE/Paging;/usr/include/ignition/transport4;/usr/include/ignition/msgs1;/usr/include/ignition/common1;/usr/include/ignition/fuel_tools1")
   if(NOT "https://bitbucket.org/dataspeedinc/velodyne_simulator/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://bitbucket.org/dataspeedinc/velodyne_simulator/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/velodyne_gazebo_plugins " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/seu/Sim_Bunker_ws/src/velodyne_simulator/velodyne_gazebo_plugins/i
         message(FATAL_ERROR "Project 'velodyne_gazebo_plugins' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'velodyne_gazebo_plugins' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/seu/Sim_Bunker_ws/src/velodyne_simulator/velodyne_gazebo_plugins/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'velodyne_gazebo_plugins' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zs/WYQ_ws/Bunker_base_ws/src/velodyne_simulator/velodyne_gazebo_plugins/${idir}'.  ${_report}")
     endif()
     _list_append_unique(velodyne_gazebo_plugins_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/seu/Sim_Bunker_ws/devel/lib;/home/seu/lio-sam/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/zs/WYQ_ws/Bunker_base_ws/devel/lib;/home/zs/zs_test/devel/lib;/home/zs/scout/devel/lib;/home/zs/lio-sam/devel/lib;/home/zs/sensor_driver/devel/lib;/home/zs/hg_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

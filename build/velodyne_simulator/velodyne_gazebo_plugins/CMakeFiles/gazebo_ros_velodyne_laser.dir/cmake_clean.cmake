@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_ros_velodyne_laser.dir/src/GazeboRosVelodyneLaser.cpp.o"
-  "/home/seu/Sim_Bunker_ws/devel/lib/libgazebo_ros_velodyne_laser.pdb"
-  "/home/seu/Sim_Bunker_ws/devel/lib/libgazebo_ros_velodyne_laser.so"
+  "/home/zs/WYQ_ws/Bunker_base_ws/devel/lib/libgazebo_ros_velodyne_laser.pdb"
+  "/home/zs/WYQ_ws/Bunker_base_ws/devel/lib/libgazebo_ros_velodyne_laser.so"
 )
 
 # Per-language clean rules from dependency scanning.

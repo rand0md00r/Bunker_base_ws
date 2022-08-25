@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "velodyne_description"
-PROJECT_SPACE_DIR = "/home/seu/Sim_Bunker_ws/install"
+PROJECT_SPACE_DIR = "/home/zs/WYQ_ws/Bunker_base_ws/install"
 PROJECT_VERSION = "1.0.12"

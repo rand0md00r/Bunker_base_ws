@@ -67,14 +67,14 @@ set(velodyne_gazebo_plugins_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(velodyne_gazebo_plugins_SOURCE_PREFIX /home/seu/Sim_Bunker_ws/src/velodyne_simulator/velodyne_gazebo_plugins)
-  set(velodyne_gazebo_plugins_DEVEL_PREFIX /home/seu/Sim_Bunker_ws/devel)
+  set(velodyne_gazebo_plugins_SOURCE_PREFIX /home/zs/WYQ_ws/Bunker_base_ws/src/velodyne_simulator/velodyne_gazebo_plugins)
+  set(velodyne_gazebo_plugins_DEVEL_PREFIX /home/zs/WYQ_ws/Bunker_base_ws/devel)
   set(velodyne_gazebo_plugins_INSTALL_PREFIX "")
   set(velodyne_gazebo_plugins_PREFIX ${velodyne_gazebo_plugins_DEVEL_PREFIX})
 else()
   set(velodyne_gazebo_plugins_SOURCE_PREFIX "")
   set(velodyne_gazebo_plugins_DEVEL_PREFIX "")
-  set(velodyne_gazebo_plugins_INSTALL_PREFIX /home/seu/Sim_Bunker_ws/install)
+  set(velodyne_gazebo_plugins_INSTALL_PREFIX /home/zs/WYQ_ws/Bunker_base_ws/install)
   set(velodyne_gazebo_plugins_PREFIX ${velodyne_gazebo_plugins_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/seu/Sim_Bunker_ws/install/lib;/home/seu/lio-sam/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/zs/WYQ_ws/Bunker_base_ws/install/lib;/home/zs/zs_test/devel/lib;/home/zs/scout/devel/lib;/home/zs/lio-sam/devel/lib;/home/zs/sensor_driver/devel/lib;/home/zs/hg_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

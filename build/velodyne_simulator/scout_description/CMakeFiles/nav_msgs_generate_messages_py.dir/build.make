@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/seu/Sim_Bunker_ws/src
+CMAKE_SOURCE_DIR = /home/zs/WYQ_ws/Bunker_base_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/seu/Sim_Bunker_ws/build
+CMAKE_BINARY_DIR = /home/zs/WYQ_ws/Bunker_base_ws/build
 
 # Utility rule file for nav_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ velodyne_simulator/scout_description/CMakeFiles/nav_msgs_generate_messages_py.di
 .PHONY : velodyne_simulator/scout_description/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 
 velodyne_simulator/scout_description/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
-	cd /home/seu/Sim_Bunker_ws/build/velodyne_simulator/scout_description && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/zs/WYQ_ws/Bunker_base_ws/build/velodyne_simulator/scout_description && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : velodyne_simulator/scout_description/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
 
 velodyne_simulator/scout_description/CMakeFiles/nav_msgs_generate_messages_py.dir/depend:
-	cd /home/seu/Sim_Bunker_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/seu/Sim_Bunker_ws/src /home/seu/Sim_Bunker_ws/src/velodyne_simulator/scout_description /home/seu/Sim_Bunker_ws/build /home/seu/Sim_Bunker_ws/build/velodyne_simulator/scout_description /home/seu/Sim_Bunker_ws/build/velodyne_simulator/scout_description/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zs/WYQ_ws/Bunker_base_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zs/WYQ_ws/Bunker_base_ws/src /home/zs/WYQ_ws/Bunker_base_ws/src/velodyne_simulator/scout_description /home/zs/WYQ_ws/Bunker_base_ws/build /home/zs/WYQ_ws/Bunker_base_ws/build/velodyne_simulator/scout_description /home/zs/WYQ_ws/Bunker_base_ws/build/velodyne_simulator/scout_description/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : velodyne_simulator/scout_description/CMakeFiles/nav_msgs_generate_messages_py.dir/depend
 
